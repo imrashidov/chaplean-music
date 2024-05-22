@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Header Start */
+header {
+  @apply bg-headerColor py-[12.63px] px-4 font-secondary;
+}
+.header-container {
+  @apply flex justify-between items-center relative w-full;
+}
+header nav {
+  @apply flex items-center justify-center gap-8 text-sm font-medium;
+}
+header nav ul {
+  @apply flex gap-8 text-secondaryGray max-lg:hidden;
+}
+header nav ul a {
+  @apply hover:text-bluePrimary hover:underline;
+}
+.header-contact-btn {
+  @apply bg-bluePrimary hover:bg-bluePrimary/70 transition-all duration-300 px-4 py-2 rounded-[40px] font-normal text-blueSecondary max-lg:hidden;
+}
+/* Header End */
