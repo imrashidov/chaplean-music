@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 /* Header Start */
+
 header {
-  @apply bg-headerColor py-[12.63px] px-4 font-secondary;
+  @apply bg-headerColor py-[12.63px] px-4 font-secondary transition-all duration-300 z-20 w-full relative;
 }
 .header-container {
-  @apply flex justify-between items-center relative w-full;
+  @apply flex justify-between items-center relative w-full transition-all duration-300;
 }
 header nav {
   @apply flex items-center justify-center gap-8 text-sm font-medium;
@@ -20,5 +21,31 @@ header nav ul a {
 }
 .header-contact-btn {
   @apply bg-bluePrimary hover:bg-bluePrimary/70 transition-all duration-300 px-4 py-2 rounded-[40px] font-normal text-blueSecondary max-lg:hidden;
+}
+.header-hamburger-btn {
+  @apply lg:hidden;
+}
+
+/* Mobile Menu */
+.mobile-nav-container {
+  @apply bg-headerColor absolute text-white w-full;
+}
+.mobile-nav-container nav {
+  @apply flex flex-col justify-center items-center text-center py-4 gap-6;
+}
+.mobile-nav-container nav ul {
+  @apply flex flex-col gap-6;
+}
+.mobile-nav-container button {
+  @apply bg-bluePrimary hover:bg-bluePrimary/70 transition-all duration-300 px-4 py-2 rounded-[40px] font-semibold text-blueSecondary;
+}
+.nav-menu-btn {
+  @apply relative h-10 w-10 rounded-full bg-white/0 transition-colors hover:bg-white/20 lg:hidden;
+}
+.nav-menu-btn span {
+  @apply absolute h-[2px] w-4 rounded-lg bg-bluePrimary;
+}
+.nav-menu-btn span:nth-child(2) {
+  @apply w-[26px];
 }
 /* Header End */
