@@ -10,7 +10,7 @@ export default {
       colors: {
         secondaryGray: "#EEEEEE",
         headerColor: "#272C46",
-        bodyColor: "141526",
+        bodyColor: "#141526",
         bluePrimary: "#1D9BF0",
         blueSecondary: "#141526",
       },

@@ -2,10 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #141526;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #272c46;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1e202d;
+}
+
+body {
+  @apply bg-bodyColor text-white;
+}
+
 /* Header Start */
 
 header {
-  @apply bg-headerColor py-[12.63px] px-4 font-secondary transition-all duration-300 z-20 w-full relative;
+  @apply bg-headerColor py-[12.63px] px-4 font-secondary transition-all duration-300 z-20 w-full fixed top-0;
 }
 .header-container {
   @apply flex justify-between items-center relative w-full transition-all duration-300;
@@ -28,7 +58,7 @@ header nav ul a {
 
 /* Mobile Menu */
 .mobile-nav-container {
-  @apply bg-headerColor absolute text-white w-full;
+  @apply bg-headerColor absolute text-white w-full z-10;
 }
 .mobile-nav-container nav {
   @apply flex flex-col justify-center items-center text-center py-4 gap-6;
@@ -49,3 +79,24 @@ header nav ul a {
   @apply w-[26px];
 }
 /* Header End */
+
+/* Main Section Start */
+.main {
+  @apply flex justify-center mt-14 relative;
+}
+.outlet-container {
+  @apply w-auto max-lg:w-full items-center flex justify-center flex-1 overflow-x-scroll;
+}
+/* Main Section End */
+
+/* Aside Start */
+aside {
+  @apply p-4 text-white min-w-[271px] overflow-hidden relative top-0 max-lg:hidden;
+}
+.left-aside {
+  @apply left-0;
+}
+.right-aside {
+  @apply right-0;
+}
+/* Aside End */

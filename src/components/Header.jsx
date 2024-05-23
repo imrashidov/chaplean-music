@@ -37,8 +37,8 @@ function Header() {
       </header>
       {/* Nav Mobile Menu */}
       <motion.div
-        initial={{ y: "-100vh" }}
-        animate={{ y: isMenuOpen ? 0 : "-200vh" }}
+        initial={{ y: "100vh" }}
+        animate={{ y: isMenuOpen ? 0 : "-300vh" }}
         transition={{ duration: 0.2 }}
         className="mobile-nav-container"
       >
