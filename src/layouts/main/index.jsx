@@ -8,7 +8,7 @@ function MainLayout() {
   return (
     <>
       <Header />
-      <section className="main mt-14">
+      <section className="main-section">
         <LeftAside />
         <div className="outlet-container">
           <Outlet />

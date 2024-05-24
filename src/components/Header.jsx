@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import MenuButton from "./MenuButton";
-import logo from "../assets/logo.svg";
+import logo from "/logo.svg";
 
 function Header() {
   const navLinks = [

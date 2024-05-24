@@ -44,7 +44,7 @@ header nav {
   @apply flex items-center justify-center gap-8 text-sm font-medium;
 }
 header nav ul {
-  @apply flex gap-8 text-secondaryGray max-lg:hidden;
+  @apply flex gap-8 text-grayPrimary max-lg:hidden;
 }
 header nav ul a {
   @apply hover:text-bluePrimary hover:underline;
@@ -80,23 +80,38 @@ header nav ul a {
 }
 /* Header End */
 
-/* Main Section Start */
-.main {
-  @apply flex justify-center mt-14 relative;
+/* Main and Outlet Section Start */
+.main-section {
+  @apply flex justify-center mt-[62.5px] relative;
 }
 .outlet-container {
-  @apply w-auto max-lg:w-full items-center flex justify-center flex-1 overflow-x-scroll;
+  @apply w-full h-screen;
 }
 /* Main Section End */
 
-/* Aside Start */
+/* Left Aside Start */
 aside {
   @apply p-4 text-white min-w-[271px] overflow-hidden relative top-0 max-lg:hidden;
 }
 .left-aside {
   @apply left-0;
 }
+.left-social {
+  @apply flex items-center p-4 rounded-xl bg-headerColor gap-2 border border-bluePrimary;
+}
+.left-social-text {
+  @apply w-[175px] leading-4;
+}
+.left-social-text p:nth-child(1) {
+  @apply font-medium;
+}
+.left-social-text p:nth-child(2) {
+  @apply text-xs;
+}
+.left-social-button {
+  @apply bg-blueSecondary rounded-md w-6 h-6 flex items-center justify-center p-4;
+}
 .right-aside {
   @apply right-0;
 }
-/* Aside End */
+/* Left Aside End */

@@ -1,7 +1,7 @@
 function RightAside() {
   return (
     <aside className="right-aside">
-      <div className="fixed">rightside</div>
+      <div>rightside</div>
     </aside>
   );
 }
